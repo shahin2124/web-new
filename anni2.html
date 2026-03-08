@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Anniversary Jannat ❤️</title>
+
+<!-- Aesthetic Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background: linear-gradient(135deg,#ff758c,#ff7eb3,#ffd1dc);
+  color:white;
+  overflow-x:hidden;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:30px 20px;
+  text-align:center;
+}
+
+.card{
+  background:rgba(0,0,0,0.35);
+  backdrop-filter: blur(8px);
+  padding:40px;
+  border-radius:25px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.3);
+  animation:fadeUp 1.5s ease;
+}
+
+/* MAIN TITLE */
+h1{
+  font-family:'Great Vibes', cursive;
+  font-size:55px;
+  margin-bottom:5px;
+  background:linear-gradient(45deg,#fff,#ffe6f0);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:glow 3s infinite alternate;
+}
+
+/* SUBTITLE */
+h2{
+  font-family:'Dancing Script', cursive;
+  font-size:32px;
+  margin-top:0;
+  animation:fadeIn 2s ease;
+}
+
+/* PARAGRAPH */
+p{
+  font-size:18px;
+  line-height:1.7;
+  animation:fadeIn 3s ease;
+}
+
+/* PHOTO SLIDER */
+.slider{
+  width:200px;
+  height:200px;
+  margin:auto;
+  margin-bottom:20px;
+  position:relative;
+}
+
+.slide{
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid white;
+  opacity:0;
+  transition:opacity 1s;
+}
+
+.slide.active{opacity:1;}
+
+/* BUTTON */
+button{
+  margin-top:15px;
+  padding:12px 26px;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  cursor:pointer;
+  background:white;
+  color:#ff4d6d;
+  font-weight:600;
+  transition:0.35s;
+}
+
+button:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 15px rgba(255,255,255,0.7);
+}
+
+.message{
+  display:none;
+  margin-top:20px;
+  font-size:20px;
+  font-family:'Dancing Script', cursive;
+  animation:fadeIn 1.5s ease;
+}
+
+.counter{
+  margin-top:15px;
+  font-size:18px;
+}
+
+.section{
+  margin-top:60px;
+}
+
+.section h2{
+  font-size:34px;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+  margin-top:20px;
+}
+
+.gallery img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:15px;
+  border:3px solid white;
+  transition:0.4s;
+}
+
+.gallery img:hover{
+  transform:scale(1.08);
+}
+
+/* TIMELINE */
+.timeline{
+  margin-top:30px;
+  text-align:left;
+}
+
+.timeline-item{
+  margin-bottom:20px;
+  padding:15px;
+  border-left:4px solid white;
+  background:rgba(255,255,255,0.1);
+  border-radius:10px;
+  animation:fadeUp 1.5s ease;
+}
+
+/* MODAL */
+.modal{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  display:none;
+  align-items:center;
+  justify-content:center;
+}
+
+.modal-content{
+  background:white;
+  color:#333;
+  padding:30px;
+  border-radius:20px;
+  max-width:500px;
+  text-align:center;
+  animation:fadeUp 1s ease;
+}
+
+.close{
+  cursor:pointer;
+  margin-top:10px;
+  display:inline-block;
+  color:#ff4d6d;
+  font-weight:bold;
+}
+
+/* FLOAT HEART */
+.heart{
+  position:fixed;
+  font-size:20px;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  0%{transform:translateY(100vh);opacity:0}
+  50%{opacity:1}
+  100%{transform:translateY(-10vh);opacity:0}
+}
+
+/* ROSE PETALS */
+.petal{
+  position:fixed;
+  top:-10px;
+  font-size:18px;
+  animation:fall 8s linear infinite;
+}
+
+@keyframes fall{
+  to{transform:translateY(110vh) rotate(360deg);} 
+}
+
+/* FIREWORK */
+.firework{
+  position:fixed;
+  font-size:20px;
+  animation:explode 1s ease-out forwards;
+}
+
+@keyframes explode{
+  from{transform:scale(0);opacity:1}
+  to{transform:scale(3);opacity:0}
+}
+
+/* TEXT ANIMATIONS */
+@keyframes glow{
+  from{ text-shadow:0 0 10px rgba(255,255,255,0.6);} 
+  to{ text-shadow:0 0 25px rgba(255,255,255,1);} 
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(25px);} 
+  to{opacity:1; transform:translateY(0);} 
+}
+
+@keyframes fadeIn{
+  from{opacity:0;} 
+  to{opacity:1;} 
+}
+
+.footer{
+  margin-top:40px;
+  font-size:22px;
+  font-family:'Dancing Script', cursive;
+}
+
+</style>
+</head>
+<body>
+
+<audio autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<div class="card">
+
+<div class="slider">
+<img class="slide active" src="j2.jpeg" alt="photo1">
+<img class="slide" src="j3.jpeg" alt="photo2">
+<img class="slide" src="WhatsApp Image 2026-03-08 at 21.12.17.jpeg" alt="photo3">
+</div>
+
+<h1>Happy 1st Anniversary ❤️</h1>
+<h2>My Dear Jannat</h2>
+
+<p>
+One year ago, you came into my life and made everything more beautiful.
+Your smile is my happiness, your love is my strength, and your presence is my peace.
+</p>
+
+<button onclick="showMessage()">Click for Surprise 💌</button>
+
+<div class="message" id="msg">
+You are the best thing that ever happened to me. I love you so much Jannat ❤️
+</div>
+
+<div class="counter" id="loveCounter"></div>
+
+<button onclick="openLetter()">Open Love Letter 💖</button>
+
+</div>
+
+<div class="section">
+<h2>Our Beautiful Memories 📸</h2>
+
+<div class="gallery">
+<img src="m1.jpeg" alt="memory1">
+<img src="m2.jpeg" alt="memory2">
+<img src="m3.jpeg" alt="memory3">
+<img src="m4.jpeg" alt="memory4">
+<img src="m5.jpeg" alt="memory5">
+<img src="m6.jpeg" alt="memory6">
+</div>
+</div>
+
+<div class="section">
+<h2>Our Love Story 💑</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<strong>First Meeting</strong><br>
+The day our story began.
+</div>
+
+<div class="timeline-item">
+<strong>First Special Moment</strong><br>
+A memory that made our bond stronger.
+</div>
+
+<div class="timeline-item">
+<strong>Wedding Day 💍</strong><br>
+The most beautiful day of our lives.
+</div>
+
+<div class="timeline-item">
+<strong>1 Year Anniversary ❤️</strong><br>
+365 days of love, memories, and happiness.
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Forever Yours,<br>
+Shahin ❤️
+</div>
+
+</div>
+
+<div class="modal" id="letterModal">
+<div class="modal-content">
+<h2>My Love Letter 💌</h2>
+<p>
+Jannat, you are the most precious gift in my life. Every moment with you feels like a dream I never want to wake up from.
+Thank you for loving me and making my life so beautiful.
+</p>
+<span class="close" onclick="closeLetter()">Close</span>
+</div>
+</div>
+
+<script>
+
+function showMessage(){
+ document.getElementById("msg").style.display="block";
+}
+
+function openLetter(){
+ document.getElementById("letterModal").style.display="flex";
+ startFireworks();
+}
+
+function closeLetter(){
+ document.getElementById("letterModal").style.display="none";
+}
+
+let slides=document.querySelectorAll(".slide");
+let index=0;
+
+setInterval(()=>{
+ slides[index].classList.remove("active");
+ index=(index+1)%slides.length;
+ slides[index].classList.add("active");
+},3000);
+
+setInterval(()=>{
+ const heart=document.createElement("div");
+ heart.className="heart";
+ heart.innerHTML="❤️";
+ heart.style.left=Math.random()*100+"vw";
+ document.body.appendChild(heart);
+ setTimeout(()=>{heart.remove();},6000);
+},600);
+
+setInterval(()=>{
+ const petal=document.createElement("div");
+ petal.className="petal";
+ petal.innerHTML="🌹";
+ petal.style.left=Math.random()*100+"vw";
+ document.body.appendChild(petal);
+ setTimeout(()=>{petal.remove();},8000);
+},1200);
+
+function startFireworks(){
+ for(let i=0;i<20;i++){
+  setTimeout(()=>{
+   const fw=document.createElement("div");
+   fw.className="firework";
+   fw.innerHTML="✨";
+   fw.style.left=Math.random()*100+"vw";
+   fw.style.top=Math.random()*60+"vh";
+   document.body.appendChild(fw);
+   setTimeout(()=>fw.remove(),1000);
+  },i*150);
+ }
+}
+
+const weddingDate=new Date("2025-03-08");
+
+function updateCounter(){
+ const now=new Date();
+ const diff=now-weddingDate;
+ const days=Math.floor(diff/(1000*60*60*24));
+ const hours=Math.floor(diff/(1000*60*60))%24;
+ const minutes=Math.floor(diff/(1000*60))%60;
+ document.getElementById("loveCounter").innerHTML=
+ "❤️ Together for: "+days+" Days "+hours+" Hours "+minutes+" Minutes";
+}
+
+setInterval(updateCounter,1000);
+
+</script>
+
+</body>
+</html>

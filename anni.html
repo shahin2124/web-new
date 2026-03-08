@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Anniversary Jannat ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Poppins;
+color:white;
+text-align:center;
+background:black;
+overflow-x:hidden;
+}
+
+/* star background */
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+background:url("https://i.imgur.com/9a8QxZB.png");
+animation:moveStars 60s linear infinite;
+z-index:-1;
+}
+
+@keyframes moveStars{
+from{background-position:0 0}
+to{background-position:10000px 5000px}
+}
+
+/* title */
+
+.title{
+font-family:'Great Vibes';
+font-size:60px;
+margin-top:50px;
+color:#ffb6c1;
+text-shadow:0 0 20px pink;
+}
+
+/* image */
+
+.hero img{
+width:260px;
+border-radius:20px;
+margin-top:20px;
+box-shadow:0 10px 40px rgba(255,105,180,0.6);
+}
+
+/* counter */
+
+.counter{
+margin-top:20px;
+font-size:22px;
+}
+
+/* gallery */
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.gallery img{
+width:150px;
+border-radius:15px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.2);
+}
+
+/* button */
+
+button{
+margin-top:30px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#ff4b6e;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+/* floating hearts */
+
+.heart{
+position:fixed;
+bottom:-10px;
+color:red;
+animation:float 5s linear infinite;
+}
+
+@keyframes float{
+to{
+transform:translateY(-100vh);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<h1 class="title" id="type"></h1>
+
+<div class="hero">
+<img src="your-photo.jpg">
+</div>
+
+<div class="counter" id="counter"></div>
+
+<button onclick="surprise()">Click for Surprise 💌</button>
+
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+</div>
+
+<audio autoplay loop>
+<source src="music.mp3">
+</audio>
+
+<script>
+
+/* typing */
+
+let text="Happy 1st Anniversary Jannat ❤️"
+let i=0
+
+function typing(){
+if(i<text.length){
+document.getElementById("type").innerHTML+=text.charAt(i)
+i++
+setTimeout(typing,80)
+}
+}
+
+typing()
+
+/* counter */
+
+let wedding=new Date("2025-03-08")
+let today=new Date()
+
+let diff=today-wedding
+let days=Math.floor(diff/(1000*60*60*24))
+
+document.getElementById("counter").innerHTML=
+"Our Love Journey: "+days+" Days ❤️"
+
+/* floating hearts */
+
+setInterval(()=>{
+let heart=document.createElement("div")
+heart.className="heart"
+heart.innerHTML="❤️"
+heart.style.left=Math.random()*100+"vw"
+heart.style.fontSize=(20+Math.random()*30)+"px"
+document.body.appendChild(heart)
+
+setTimeout(()=>heart.remove(),5000)
+
+},400)
+
+/* surprise */
+
+function surprise(){
+alert("Jannat ❤️ You are the most beautiful part of my life. Happy Anniversary My Love 💖")
+}
+
+/* heart explosion on click */
+
+document.addEventListener("click",function(e){
+
+for(let i=0;i<10;i++){
+
+let heart=document.createElement("div")
+heart.innerHTML="💖"
+heart.style.position="absolute"
+heart.style.left=e.pageX+"px"
+heart.style.top=e.pageY+"px"
+heart.style.fontSize="20px"
+heart.style.animation="float 2s linear"
+
+document.body.appendChild(heart)
+
+setTimeout(()=>heart.remove(),2000)
+
+}
+
+})
+
+</script>
+
+</body>
+</html>
